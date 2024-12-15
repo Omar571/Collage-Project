@@ -1,0 +1,61 @@
+* ,::after ,::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: #000000ac;
+  --text-col1: #ffffff;
+  --main-font: "Montserrat Alternates", sans-serif;
+  --main-font-size: 3rem;
+  --main-font-weight:800;
+  --secandary-font: "Parkinsans", sans-serif;
+  --secand-font-size: 1rem;
+  --secand-font-weight:400;
+}
+
+
+body {
+  background-color: var(--main-bg);
+  margin-top: 0;
+  color: var(--main-bg);
+
+  
+}
+
+* h1, h2 ,h3 ,.h1, .h2, .h3  {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    font-weight: var(--main-font-weight);
+    color: var(--text-col1);
+    text-align: center;
+    
+}
+* p , span   {
+    font-family: var(--secandary-font);
+    font-size: var(--secand-font-size);
+    font-weight: var(--secand-font-weight);
+
+}
+
+.contain-change{
+
+    background-image: url(../img/black-friday-sales-sign-neon-light.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    min-height: 100vh;
+}
+label {
+    font-family: var(--secandary-font);
+    font-size: 16px;
+    font-weight: 200;
+}
+.change-bo{
+    --bs-btn-hover-bg: #3712cb53;
+    --bs-btn-hover-border-color: #3712cb53;
+}
+
+.change-btn{
+  --bs-btn-hover-bg:#fd0d0d;
+  --bs-btn-hover-border-color: #fd0d0d;
+}

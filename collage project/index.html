@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css/all.min.css" />
+    <link rel="stylesheet" href="./style.css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Electronic Online System</title>
+  </head>
+  <body class="text-capitalize">
+    <section class="contain-change">
+      <div class="container gy-3">
+        <h1 class="py-3">Add Product</h1>
+        <div>
+          <div class="form-floating mb-3 pb-4">
+            <input
+              type="text"
+              class="form-control bg-white bg-opacity-50 text-white"
+              id="productname"
+              placeholder=""
+            />
+            <label for="productname">product name</label>
+          </div>
+          <div class="form-floating mb-3 pb-4">
+            <input
+              type="number"
+              class="form-control bg-white bg-opacity-50 text-white"
+              id="productprice"
+              placeholder=""
+            />
+            <label for="productprice">product price</label>
+          </div>
+          <div class="form-floating mb-3 pb-2">
+            <input
+              list="list"
+              type="text"
+              class="form-control bg-white bg-opacity-50 text-white"
+              id="productcategory"
+              placeholder=""
+            />
+            <label for="productcategory">product category</label>
+            <datalist id="list">
+              <option value="Tv"></option>
+              <option value="Phone"></option>
+              <option value="Playstation"></option>
+              <option value="Smartwatch"></option>
+            </datalist>
+          </div>
+          /div>
+          <div class="form-floating mb-3 pb-3">
+            <textarea
+              class="form-control bg-white bg-opacity-50 text-white"
+              placeholder=""
+              id="productdescription"
+              style="height: 100px"
+            ></textarea>
+            <label for="productdescription">Description</label>
+          </div>
+          
+
+          <button
+            class="btn btn-danger change-bo w-25 mb-4"
+            onclick="addproduct()"
+          >
+            Add
+          </button>
+        </div>
+
+        <div class="mt-5">
+          <div class="container-fluid">
+            <div class="row gy-4" id="rowdata"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
